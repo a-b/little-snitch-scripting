@@ -50,3 +50,5 @@ end tell
 
 EOD
 }
+
+set_little_snitch_profile $1
