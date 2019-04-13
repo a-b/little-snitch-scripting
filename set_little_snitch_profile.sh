@@ -1,4 +1,7 @@
 set_little_snitch_profile() {
+
+	DEFAULT_LS_PROFILE="!OFF"
+
 osascript <<EOD
 
 tell application "System Events"
@@ -20,7 +23,7 @@ tell application "System Events"
 					set _cell to UI element 1 of _row
 					set _label to get value of static text 1 of _cell
 
-					set _profile to "${1:-!OFF}"
+					set _profile to "${1:-$DEFAULT_LS_PROFILE}"
 
 					set _row_lbl_suggestions to "Suggestions"
 					if _label is _row_lbl_suggestions then
