@@ -1,3 +1,5 @@
+#!/bin/sh
+
 set_little_snitch_profile() {
 
 	DEFAULT_LS_PROFILE="!OFF"
